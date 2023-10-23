@@ -11,14 +11,6 @@ export default function Blog({ posts }) {
     return (
         <Page>
             <h1 className={css.title}>Blog</h1>
-
-            <br />
-
-            <img
-                src="https://images.unsplash.com/photo-1533000971552-6a962ff0b9f9?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1267&q=80"
-                className={css.image}
-            />
-
             <div className={css.card}>
                 <ul>
                     {posts.map((post) => (
