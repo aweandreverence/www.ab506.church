@@ -15,7 +15,7 @@ export function Footer({ children }) {
                 <div className={css.socialmedia}>
                     <div className={css.facebook}>
                         <a
-                            href="https://www.facebook.com/ab50"
+                            href="https://www.facebook.com/AweAndReverence"
                             title="Awe & Reverence on Facebook"
                             target="_blank"
                         >
@@ -26,7 +26,7 @@ export function Footer({ children }) {
                     </div>
                     <div className={css.twitter}>
                         <a
-                            href="https://twitter.com/ab506"
+                            href="https://twitter.com/aweandreverence"
                             title="ab506 on Twitter"
                             target="_blank"
                         >

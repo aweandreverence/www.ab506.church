@@ -6,12 +6,10 @@ import { Footer } from '../components/footer';
 import { CommonCSS } from '../components/css/common';
 import { CommonJS } from '../components/js/common';
 import { NonBlockingJS } from '../components/js/nonblocking';
-import { Contact } from '../components/contact';
 
 import { SITE_TITLE, PAGE_TITLES } from '../constants/seo.js';
 
 import css from '../styles/common.module.scss';
-import utilsCss from '../styles/utils.module.scss';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 
 export default function Page({ children }) {
@@ -44,7 +42,6 @@ export default function Page({ children }) {
             <Header />
             <main className={css.main}>
                 {children}
-                <Contact />
             </main>
             <Footer />
             <NonBlockingJS />
