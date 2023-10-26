@@ -37,7 +37,7 @@ export function Footer({ children }) {
                     </div>
                 </div>
                 <div className={css.copyright}>
-                    <p>&copy; ab506.church {CURRENT_YEAR}</p>
+                    <p>&copy; Awe and Reverence {CURRENT_YEAR}</p>
                 </div>
             </footer>
         </>
