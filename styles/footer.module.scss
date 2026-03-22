@@ -1,59 +1,78 @@
 .footer {
     width: 100%;
-    height: 120px;
-    border-top: 1px solid #eaeaea;
+    background: var(--color-navy, #1a365d);
+    color: rgba(255, 255, 255, 0.8);
+    padding: 2.5rem 1rem 1.5rem;
+    margin-top: auto;
+}
+
+.footerInner {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.footerSection {
+    min-width: 200px;
+
+    h4 {
+        color: var(--color-white, #ffffff);
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: 0.75rem;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    li {
+        margin-bottom: 0.4rem;
+    }
 
     a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        color: rgba(255, 255, 255, 0.7);
+        text-decoration: none;
+        font-size: 0.9rem;
+        transition: color 0.2s;
+
+        &:hover {
+            color: var(--color-gold, #d69e2e);
+            text-decoration: none;
+        }
     }
 }
 
-.facebook,
-.twitter {
-    font-size: 1.5rem;
-    color: #fff;
-    padding: 5px;
-    height: 50px;
-    width: 50px;
-    margin: 15px;
-    border-radius: 5px;
-    text-align: center;
-    text-rendering: optimizeLegibility;
+.divider {
+    width: 100%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.15);
+    margin: 1rem 0;
 }
 
-.facebook {
-    background: #4267b2;
-    float: left;
-    content:"\f39e";
-    font-family: "Font Awesome 5 Brands";
-    font-weight: 400;
+.bottomBar {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.5);
 
-}
+    a {
+        color: rgba(255, 255, 255, 0.5);
+        text-decoration: none;
 
-.twitter {
-    background: #1da1f2;
-    float: right;
-}
-
-.icon {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.socialmedia {
-    position: absolute;
-    top: 0;
-    justify-content: center;
-}
-
-.copyright {
-    position: absolute;
-    bottom: 0;
+        &:hover {
+            color: var(--color-gold, #d69e2e);
+            text-decoration: none;
+        }
+    }
 }
