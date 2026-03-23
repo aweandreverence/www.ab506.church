@@ -78,7 +78,7 @@ export function Footer() {
                 <span>
                     Built by{' '}
                     <a
-                        href="https://aweandreverence.net"
+                        href="https://www.aweandreverence.com"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
