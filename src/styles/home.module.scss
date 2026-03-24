@@ -1,5 +1,5 @@
 .hero {
-    background: linear-gradient(135deg, var(--color-navy, #1a365d) 0%, var(--color-teal, #2c7a7b) 100%);
+    background: var(--color-navy, #1a2332);
     color: var(--color-white, #ffffff);
     padding: 4rem 1rem;
     text-align: center;
@@ -92,9 +92,7 @@
     }
 }
 
-.cardIcon {
-    font-size: 1.5rem;
-}
+/* cardIcon removed — emoji icons replaced with text-only headings */
 
 .section {
     margin: 3rem 0;
@@ -155,11 +153,18 @@
 }
 
 .legalNote {
-    background: var(--color-bg-alt, #edf2f7);
-    border-left: 4px solid var(--color-teal, #2c7a7b);
+    background: #fefce8;
+    border-left: 4px solid #f59e0b;
     padding: 1.25rem 1.5rem;
     border-radius: 0 8px 8px 0;
     margin: 2rem 0;
     font-size: 0.9rem;
-    color: var(--color-text-muted, #718096);
+    color: var(--color-text, #1e293b);
+}
+
+.lastUpdated {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 1.5rem;
+    font-style: italic;
 }

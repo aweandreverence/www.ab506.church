@@ -14,7 +14,7 @@ export default function Resources() {
             </div>
 
             {/* Official / Legal */}
-            <h2 style={{ marginTop: '2rem' }}>📜 Official &amp; Legal</h2>
+            <h2 style={{ marginTop: '2rem' }}>Official &amp; Legal</h2>
             <div className={css.resourceGrid}>
                 <div className={css.resourceCard}>
                     <h3>Full Text of AB 506</h3>
@@ -64,7 +64,7 @@ export default function Resources() {
             </div>
 
             {/* Training */}
-            <h2 style={{ marginTop: '2.5rem' }}>📚 Training</h2>
+            <h2 style={{ marginTop: '2.5rem' }}>Training</h2>
             <div className={css.resourceGrid}>
                 <div className={css.resourceCard}>
                     <h3>California Mandated Reporter Training</h3>
@@ -100,7 +100,7 @@ export default function Resources() {
             </div>
 
             {/* Policies & Tools */}
-            <h2 style={{ marginTop: '2.5rem' }}>📋 Policies &amp; Tools</h2>
+            <h2 style={{ marginTop: '2.5rem' }}>Policies &amp; Tools</h2>
             <div className={css.resourceGrid}>
                 <div className={css.resourceCard}>
                     <h3>Model Child Protection Policy</h3>
@@ -152,7 +152,7 @@ export default function Resources() {
             </div>
 
             {/* Insurance */}
-            <h2 style={{ marginTop: '2.5rem' }}>🛡️ Insurance</h2>
+            <h2 style={{ marginTop: '2.5rem' }}>Insurance</h2>
             <div className={css.resourceGrid}>
                 <div className={css.resourceCard}>
                     <h3>ChurchWest Insurance</h3>
@@ -173,7 +173,7 @@ export default function Resources() {
             </div>
 
             {/* Reporting */}
-            <h2 style={{ marginTop: '2.5rem' }}>🚨 Reporting Abuse</h2>
+            <h2 style={{ marginTop: '2.5rem' }}>Reporting Abuse</h2>
             <div className={css.resourceGrid}>
                 <div className={css.resourceCard}>
                     <h3>Report Child Abuse</h3>
