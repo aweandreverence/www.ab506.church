@@ -20,6 +20,7 @@ export default function Home() {
                     <Link href="/compliance-checklist">
                         <a className={css.heroCta}>Get Your Compliance Checklist →</a>
                     </Link>
+                    <p className={css.lastUpdated}>Last Updated: March 2026</p>
                 </div>
             </div>
 
@@ -41,10 +42,7 @@ export default function Home() {
                 </p>
                 <div className={css.cardGrid}>
                     <div className={css.card}>
-                        <h3>
-                            <span className={css.cardIcon}>📚</span>
-                            Training
-                        </h3>
+                        <h3>Training</h3>
                         <p>
                             All administrators, employees, and regular volunteers must
                             complete child abuse and neglect identification and reporting
@@ -52,10 +50,7 @@ export default function Home() {
                         </p>
                     </div>
                     <div className={css.card}>
-                        <h3>
-                            <span className={css.cardIcon}>🔍</span>
-                            Background Checks
-                        </h3>
+                        <h3>Background Checks</h3>
                         <p>
                             Everyone working with youth must undergo a background check
                             through the California Department of Justice (Live Scan
@@ -63,10 +58,7 @@ export default function Home() {
                         </p>
                     </div>
                     <div className={css.card}>
-                        <h3>
-                            <span className={css.cardIcon}>📋</span>
-                            Policies &amp; Procedures
-                        </h3>
+                        <h3>Policies &amp; Procedures</h3>
                         <p>
                             Churches must develop written child abuse prevention policies,
                             including mandatory external reporting and maintaining at
@@ -74,10 +66,7 @@ export default function Home() {
                         </p>
                     </div>
                     <div className={css.card}>
-                        <h3>
-                            <span className={css.cardIcon}>🛡️</span>
-                            Insurance Compliance
-                        </h3>
+                        <h3>Insurance Compliance</h3>
                         <p>
                             Insurers may request proof of AB 506 compliance before writing
                             liability insurance for your church. Being compliant protects
@@ -92,10 +81,7 @@ export default function Home() {
                 <h2 className={css.sectionTitle}>Who Does This Apply To?</h2>
                 <div className={css.cardGrid}>
                     <div className={css.card}>
-                        <h3>
-                            <span className={css.cardIcon}>⛪</span>
-                            Churches &amp; Ministries
-                        </h3>
+                        <h3>Churches &amp; Ministries</h3>
                         <p>
                             Any California church or ministry that provides youth
                             programs, Sunday school, VBS, youth groups, or childcare
@@ -103,10 +89,7 @@ export default function Home() {
                         </p>
                     </div>
                     <div className={css.card}>
-                        <h3>
-                            <span className={css.cardIcon}>👥</span>
-                            Employees &amp; Volunteers
-                        </h3>
+                        <h3>Employees &amp; Volunteers</h3>
                         <p>
                             All employees, plus &ldquo;regular volunteers&rdquo;&mdash;anyone
                             18+ who has direct contact with children for more than 16
@@ -114,10 +97,7 @@ export default function Home() {
                         </p>
                     </div>
                     <div className={css.card}>
-                        <h3>
-                            <span className={css.cardIcon}>👔</span>
-                            Administrators
-                        </h3>
+                        <h3>Administrators</h3>
                         <p>
                             Church administrators and leadership are included in all
                             training and background check requirements, even if they

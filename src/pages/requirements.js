@@ -115,7 +115,7 @@ export default function Requirements() {
                         </li>
                     </ul>
                     <div className={css.defBox}>
-                        <h4>📋 Best Practice</h4>
+                        <h4>Best Practice</h4>
                         <p>
                             AB 506 sets the <em>minimum</em> standard. Churches should go
                             beyond these requirements with comprehensive child protection
