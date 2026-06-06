@@ -1,7 +1,6 @@
 import { GoogleAnalytics } from './google/analytics';
 
 export function CommonJS() {
-    // TODO: please change the following with the ab506.church trackging Id
-    const jsx = <GoogleAnalytics trackingId="UA-8680690-4" />;
+    const jsx = <GoogleAnalytics trackingId="G-GR528C9X7M" />;
     return jsx;
 }
