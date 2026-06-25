@@ -18,14 +18,16 @@ For non-visual changes (config, docs-only, build scripts), a screenshot is optio
 
 ## Build & Deploy
 
-This site uses NextJS with static export to the `docs/` directory, deployed via GitHub Pages.
+This site uses NextJS with static export to the `docs/` directory, deployed via GitHub Pages Actions from the committed `docs/` directory.
 
 ```bash
 # Build the NextJS site (all contributors)
 make build
 ```
 
-**`make deploy` is admin-only.** Only admins run the deploy step to export to `docs/` and push to `master`. Contributors should only run `make build` to verify their changes locally.
+**`make deploy` is legacy/admin-only and not part of PR work.** Contributors should only run `make build` to verify their changes locally.
+
+After the Pages Actions workflow is merged, an admin must set repo **Settings → Pages → Source** to **GitHub Actions** and verify the first `Deploy GitHub Pages` workflow run succeeds.
 
 ## Architecture
 

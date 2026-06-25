@@ -6,9 +6,9 @@
 
 - **Hosting**: GitHub Pages (static export)
 - **Build output**: `docs/` directory (via `next build` + `next export` → `out/` → `docs/`)
-- **Branch**: `master` is production — merges trigger deployment
+- **Branch**: `master` is production — merges trigger the GitHub Pages Actions workflow after Pages is configured for GitHub Actions
 - **Build command**: `make build` (runs build, copies CNAME and .nojekyll)
-- **Deploy command**: `make deploy` (builds, commits `docs/`, pushes to master)
+- **Deploy command**: `.github/workflows/deploy-pages.yml` uploads the committed `docs/` directory to GitHub Pages. `make deploy` is legacy/admin-only and must not be used for PR work.
 
 ## Rules
 
@@ -16,10 +16,10 @@
 2. **Never merge your own PR.** Wait for operator approval.
 3. **Screenshot required.** Every PR that touches UI must include a screenshot of the rendered result. Attach it to the PR description.
 4. **Build and verify locally** before opening a PR:
-   ```bash
-   make build    # Build the NextJS site
-   ```
-   **Do NOT run `make deploy`** — that is admin-only.
+    ```bash
+    make build    # Build the NextJS site
+    ```
+    **Do NOT run `make deploy`** — that is admin-only.
 5. **Keep PRs focused.** One logical change per PR. Don't bundle unrelated work.
 
 ## Repo Structure
@@ -48,7 +48,8 @@ master ← PR ← feature-branch
 4. Take a screenshot of the relevant pages
 5. Commit, push, open PR with screenshot attached
 6. Wait for review and approval
-7. Operator merges → admin runs `make deploy` → GitHub Pages deploys from `docs/`
+7. Operator merges → GitHub Actions deploys the committed `docs/` site to GitHub Pages
+8. After this workflow is merged, an admin must set repo **Settings → Pages → Source** to **GitHub Actions** and verify the first `Deploy GitHub Pages` run succeeds.
 
 ## Development
 
@@ -62,6 +63,7 @@ make format     # Format code with prettier
 ## What Counts as UI Changes
 
 If any of these files are touched, a screenshot is mandatory:
+
 - Any `.js`, `.jsx`, `.css`, or `.scss` file
 - Layout or component files
 - Any page content that renders visually
